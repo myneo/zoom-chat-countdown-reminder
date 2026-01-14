@@ -12,7 +12,7 @@ An open-source automation tool for Zoom hosts. This lightweight bot sends schedu
 
 ## Installation & Usage
 
-### Option 1: Run form Source (Recommended for Developers)
+### Option 1: Run from Source (Recommended for Developers)
 1.  Download and install [AutoHotkey v2](https://www.autohotkey.com/).
 2.  Download `ZoomCountdownBot.ahk` from this repository.
 3.  Double-click the file to run.
@@ -22,14 +22,15 @@ An open-source automation tool for Zoom hosts. This lightweight bot sends schedu
 
 ## How to Use
 
-1.  **Open Zoom:** Start your meeting and **open the Chat panel** (ensure it is attached to the side, not popped out).
-2.  **Run the Bot:** Open `ZoomCountdownBot`.
-3.  **Set Time:** Enter the meeting start time in 24-hour format (e.g., `2000` for 8:00 PM).
-4.  **Set Interval:** Choose how often messages should be sent (e.g., every `5` minutes).
-5.  **Customize Message:** Edit the default text. Make sure to keep `{min}` if you want the countdown number to appear.
-6.  **Click Start:** The bot will calculate the next sync point and begin the countdown.
+1.  **Open Zoom:** Start your meeting.
+2.  **OPEN CHAT PANEL:** Click "Chat" in Zoom to open the sidebar. **You must keep this sidebar open and attached** while the bot is running.
+3.  **Run the Bot:** Open `ZoomCountdownBot`.
+4.  **Set Time:** Enter the meeting start time in 24-hour format (e.g., `2000` for 8:00 PM).
+5.  **Set Interval:** Choose how often messages should be sent (e.g., every `5` minutes).
+6.  **Customize Message:** Edit the default text. Use `{min}` where you want the countdown number to appear.
+7.  **Click Start:** The bot will calculate the next sync point and begin the countdown.
 
-**⚠️ Important Note:** This bot uses simulated keystrokes. Please keep the Zoom Chat panel open and visible while the bot is running.
+> **⚠️ Important:** This bot uses simulated keystrokes. It requires the Zoom Chat panel to be visible to type the message successfully. Do not close the chat sidebar while the bot is active.
 
 ## License
 MIT License. Free to use and modify.
