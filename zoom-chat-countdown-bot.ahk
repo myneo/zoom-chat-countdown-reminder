@@ -23,20 +23,15 @@ TimeEdit := myGui.Add("Edit", "w380 Number Limit4", "2000") ; Default: 8:00 PM
 myGui.Add("Text",, "Send Message Every (minutes):")
 IntervalEdit := myGui.Add("Edit", "w380 Number Limit3", "5")
 
-; 3. Countdown Message (Generic Default)
+; 3. Countdown Message
 myGui.Add("Text",, "Message Body ({min} = minutes left):")
 DefaultMsg := "Hello everyone! The session will start in {min} minutes. Please stay tuned."
 MsgEdit := myGui.Add("Edit", "w380 r3", DefaultMsg)
 
-; 4. Final Message (Generic Default)
+; 4. Final Message
 myGui.Add("Text",, "Final Message (Leave blank to send nothing):")
 DefaultFinalMsg := "The session is starting now! Let's go!"
 FinalMsgEdit := myGui.Add("Edit", "w380 r2", DefaultFinalMsg)
-
-; --- WARNING LABEL ---
-myGui.SetFont("s9 bold", "Segoe UI")
-myGui.Add("Text", "w380 Center cRed", "⚠️ IMPORTANT: Keep Zoom Chat Side-Panel OPEN!")
-myGui.SetFont("s10", "Segoe UI") 
 
 ; --- VISUAL COUNTDOWN ---
 myGui.SetFont("s14 bold", "Segoe UI")
